@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "codeZen",
+  "version": "1.0",
+
+  "description": "Block all websites, whitelist known websites for learning programming",
+
+  "icons": {
+    "48": "icons/DALL·E 2023-03-30 16.10.26.png"
+  }
+}
