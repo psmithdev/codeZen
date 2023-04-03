@@ -7,7 +7,9 @@
 
   "icons": {
     "48": "icons/DALL·E 2023-03-30 16.10.26.png"
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html"
   }
 }
-
-test
