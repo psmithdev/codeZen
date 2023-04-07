@@ -2,12 +2,26 @@
   "manifest_version": 2,
   "name": "codeZen",
   "version": "1.0",
-
   "description": "Block all websites, whitelist known websites for learning programming",
 
   "icons": {
     "48": "icons/DALL·E 2023-03-30 16.10.26.png"
   },
+
+  "content_scripts": [
+    {
+      // "matches": ["<all_urls>"],
+      // "matches": ["https://news.ycombinator.com/", "https://www.yahoo.com/"],
+      "js": ["block.js"],
+      "css": ["style.css"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["block.js"]
+  },
+
+  "permissions": ["webRequest", "webRequestBlocking"],
 
   "browser_action": {
     "default_popup": "popup.html"
